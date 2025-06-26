@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X, Phone, Zap } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X, Phone, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -15,7 +15,7 @@ export default function Header() {
     { name: "Testimonials", href: "/testimonials" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
-  ]
+  ];
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -26,7 +26,9 @@ export default function Header() {
             <div className="bg-blue-600 p-2 rounded-lg">
               <Zap className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">Shove Electricals</span>
+            <span className="text-xl font-bold text-gray-900">
+              Verma Electricals
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,8 +56,15 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -76,7 +85,9 @@ export default function Header() {
               <div className="pt-4 border-t">
                 <div className="flex items-center gap-2 mb-2">
                   <Phone className="w-4 h-4 text-blue-600" />
-                  <span className="font-semibold text-blue-600">(555) 123-4567</span>
+                  <span className="font-semibold text-blue-600">
+                    (555) 123-4567
+                  </span>
                 </div>
                 <Button asChild className="w-full">
                   <Link href="/contact">Get Quote</Link>
@@ -87,5 +98,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

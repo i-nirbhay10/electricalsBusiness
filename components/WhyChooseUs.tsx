@@ -1,46 +1,55 @@
-import { Shield, Award, Clock, Users, Wrench, Phone } from "lucide-react"
+import { Shield, Award, Clock, Users, Wrench, Phone } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
     title: "Licensed & Insured",
-    description: "Fully licensed electricians with comprehensive insurance coverage for your peace of mind.",
+    description:
+      "Fully licensed electricians with comprehensive insurance coverage for your peace of mind.",
   },
   {
     icon: Award,
     title: "Quality Workmanship",
-    description: "Over 13 years of experience delivering exceptional electrical services with guaranteed satisfaction.",
+    description:
+      "Over 13 years of experience delivering exceptional electrical services with guaranteed satisfaction.",
   },
   {
     icon: Clock,
     title: "24/7 Emergency Service",
-    description: "Round-the-clock availability for urgent electrical issues and emergency repairs.",
+    description:
+      "Round-the-clock availability for urgent electrical issues and emergency repairs.",
   },
   {
     icon: Users,
     title: "Expert Team",
-    description: "Certified master electricians with extensive training and ongoing professional development.",
+    description:
+      "Certified master electricians with extensive training and ongoing professional development.",
   },
   {
     icon: Wrench,
     title: "Modern Equipment",
-    description: "State-of-the-art tools and diagnostic equipment for efficient and accurate service.",
+    description:
+      "State-of-the-art tools and diagnostic equipment for efficient and accurate service.",
   },
   {
     icon: Phone,
     title: "Reliable Support",
-    description: "Responsive customer service and ongoing support for all your electrical needs.",
+    description:
+      "Responsive customer service and ongoing support for all your electrical needs.",
   },
-]
+];
 
 export default function WhyChooseUs() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Shove Electricals?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Why Choose Verma Electricals?
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're committed to providing the highest quality electrical services with professionalism and integrity
+            We're committed to providing the highest quality electrical services
+            with professionalism and integrity
           </p>
         </div>
 
@@ -57,5 +66,5 @@ export default function WhyChooseUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -48,17 +48,17 @@ export async function submitContactForm(formData: FormData) {
 
     // 1. Send inquiry email to the business
     const inquiryMailOptions = {
-      from: `"Shove Electricals Contact" <${process.env.SMTP_USER}>`,
+      from: `"Verma Electricals Contact" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || "info@shoveelectricals.com",
-      subject: "New Contact Form Submission – Shove Electricals",
+      subject: "New Contact Form Submission – Verma Electricals",
       html: generateInquiryTemplate(data),
     };
 
     // 2. Send confirmation email to the customer
     const confirmationMailOptions = {
-      from: `"Shove Electricals" <${process.env.SMTP_USER}>`,
+      from: `"Verma Electricals" <${process.env.SMTP_USER}>`,
       to: data.email,
-      subject: "We've Received Your Inquiry – Shove Electricals",
+      subject: "We've Received Your Inquiry – Verma Electricals",
       html: generateConfirmationTemplate(data),
     };
 

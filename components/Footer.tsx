@@ -1,5 +1,13 @@
-import Link from "next/link"
-import { Phone, Mail, MapPin, Zap, Facebook, Twitter, Instagram } from "lucide-react"
+import Link from "next/link";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Zap,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,20 +20,30 @@ export default function Footer() {
               <div className="bg-blue-600 p-2 rounded-lg">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold">Shove Electricals</span>
+              <span className="text-xl font-bold">Verma Electricals</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional electrical services you can trust. Serving the community since 2010 with quality workmanship
-              and exceptional customer service.
+              Professional electrical services you can trust. Serving the
+              community since 2010 with quality workmanship and exceptional
+              customer service.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -36,32 +54,50 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/testimonials"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/faq"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -109,9 +145,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Shove Electricals. All rights reserved. | Licensed & Insured</p>
+          <p>
+            &copy; 2024 Verma Electricals. All rights reserved. | Licensed &
+            Insured
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -11,7 +11,7 @@ export function generateInquiryTemplate(data: {
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>New Inquiry - Shove Electricals</title>
+      <title>New Inquiry - Verma Electricals</title>
     </head>
     <body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif; color: #333;">
       <div style="max-width: 600px; margin: 30px auto; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
@@ -47,7 +47,7 @@ export function generateInquiryTemplate(data: {
           </table>
         </div>
         <div style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 12px; color: #777;">
-          © ${new Date().getFullYear()} Shove Electricals — Contact Form Notification
+          © ${new Date().getFullYear()} Verma Electricals — Contact Form Notification
         </div>
       </div>
     </body>
@@ -67,7 +67,7 @@ export function generateConfirmationTemplate(data: {
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Thank You – Shove Electricals</title>
+      <title>Thank You – Verma Electricals</title>
       <style>
           body {
               font-family: Arial, sans-serif;
@@ -135,7 +135,7 @@ export function generateConfirmationTemplate(data: {
           <div class="header">Thank You for Contacting Us!</div>
           <div class="content">
               <p>Hello ${data.name},</p>
-              <p>Thanks for reaching out to Shove Electricals. We’ve received your inquiry and will get back to you shortly.</p>
+              <p>Thanks for reaching out to Verma Electricals. We’ve received your inquiry and will get back to you shortly.</p>
               <p>Here’s a summary of your message:</p>
               <ul>
                   <li><strong>Service:</strong> ${data.service}</li>
@@ -143,10 +143,10 @@ export function generateConfirmationTemplate(data: {
                   <li><strong>Message:</strong> ${data.message}</li>
               </ul>
               <p>If you have any urgent queries, feel free to call us or reply to this email.</p>
-              <p>Regards,<br>The Shove Electricals Team</p>
+              <p>Regards,<br>The Verma Electricals Team</p>
           </div>
           <div class="footer">
-              &copy; ${new Date().getFullYear()} Shove Electricals. All rights reserved.
+              &copy; ${new Date().getFullYear()} Verma Electricals. All rights reserved.
           </div>
       </div>
   </body>

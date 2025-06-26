@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import { Star, Quote } from "lucide-react"
+import type { Metadata } from "next";
+import { Star, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Customer Testimonials - What Our Clients Say",
   description:
-    "Read reviews and testimonials from satisfied customers of Shove Electricals. See why we are the trusted choice for electrical services.",
-}
+    "Read reviews and testimonials from satisfied customers of Verma Electricals. See why we are the trusted choice for electrical services.",
+};
 
 const testimonials = [
   {
@@ -13,7 +13,7 @@ const testimonials = [
     location: "Springfield",
     service: "Appliance Repair",
     rating: 5,
-    text: "Shove Electricals saved the day when our refrigerator broke down. John arrived within 2 hours and had it fixed in no time. Professional, knowledgeable, and fairly priced. Highly recommend!",
+    text: "Verma Electricals saved the day when our refrigerator broke down. John arrived within 2 hours and had it fixed in no time. Professional, knowledgeable, and fairly priced. Highly recommend!",
     date: "2 weeks ago",
   },
   {
@@ -72,7 +72,7 @@ const testimonials = [
     text: "Washing machine repair was done quickly and efficiently. Fair pricing and they even gave tips on maintenance. Will definitely use them again.",
     date: "2 weeks ago",
   },
-]
+];
 
 export default function Testimonials() {
   return (
@@ -81,8 +81,12 @@ export default function Testimonials() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Customer Testimonials</h1>
-            <p className="text-xl md:text-2xl opacity-90">See what our satisfied customers have to say</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Customer Testimonials
+            </h1>
+            <p className="text-xl md:text-2xl opacity-90">
+              See what our satisfied customers have to say
+            </p>
           </div>
         </div>
       </section>
@@ -116,24 +120,40 @@ export default function Testimonials() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 relative">
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg p-6 relative"
+              >
                 <div className="absolute top-4 right-4">
                   <Quote className="w-8 h-8 text-blue-200" />
                 </div>
 
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
 
-                <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  "{testimonial.text}"
+                </p>
 
                 <div className="border-t pt-4">
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.location}</div>
-                  <div className="text-sm text-blue-600 font-medium">{testimonial.service}</div>
-                  <div className="text-xs text-gray-500 mt-1">{testimonial.date}</div>
+                  <div className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    {testimonial.location}
+                  </div>
+                  <div className="text-sm text-blue-600 font-medium">
+                    {testimonial.service}
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1">
+                    {testimonial.date}
+                  </div>
                 </div>
               </div>
             ))}
@@ -144,8 +164,12 @@ export default function Testimonials() {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Join Our Satisfied Customers?</h2>
-          <p className="text-xl mb-8 opacity-90">Contact us today for professional electrical services you can trust</p>
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Join Our Satisfied Customers?
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Contact us today for professional electrical services you can trust
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
@@ -163,5 +187,5 @@ export default function Testimonials() {
         </div>
       </section>
     </div>
-  )
+  );
 }

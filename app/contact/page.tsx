@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us - Get Your Free Quote Today",
   description:
-    "Contact Shove Electricals for professional electrical services. Call us for emergency repairs or schedule a consultation. Free quotes available.",
+    "Contact Verma Electricals for professional electrical services. Call us for emergency repairs or schedule a consultation. Free quotes available.",
 };
 
 export default function Contact() {
