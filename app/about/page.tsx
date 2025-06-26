@@ -31,18 +31,18 @@ export default function About() {
             <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
             <div className="prose prose-lg mx-auto text-gray-700">
               <p className="text-lg leading-relaxed mb-6">
-                Founded in 2010, Verma Electricals began as a small family
+                Founded in 1988, Verma Electricals began as a small family
                 business with a simple mission: to provide reliable,
                 professional electrical services to our community. What started
                 as a two-person operation has grown into a trusted team of
                 certified electricians serving hundreds of satisfied customers.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                Our founder, John Shove, recognized the need for honest, skilled
-                electrical work in our area. With over 15 years of experience in
-                the electrical industry, he built Verma Electricals on the
-                principles of quality workmanship, fair pricing, and exceptional
-                customer service.
+                Our founder, Nand LAL Verma, recognized the need for honest,
+                skilled electrical work in our area. With over 30 years of
+                experience in the electrical industry, he built Verma
+                Electricals on the principles of quality workmanship, fair
+                pricing, and exceptional customer service.
               </p>
               <p className="text-lg leading-relaxed">
                 Today, we continue to uphold these values while expanding our
@@ -116,10 +116,10 @@ export default function About() {
               <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="w-16 h-16 text-gray-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">John Shove</h3>
+              <h3 className="text-xl font-semibold mb-2">Nand LAL Verma</h3>
               <p className="text-blue-600 mb-2">Founder & Master Electrician</p>
               <p className="text-gray-600 text-sm">
-                15+ years experience, certified master electrician specializing
+                30+ years experience, certified master electrician specializing
                 in residential and commercial work.
               </p>
             </div>
@@ -127,7 +127,7 @@ export default function About() {
               <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="w-16 h-16 text-gray-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Sarah Mitchell</h3>
+              <h3 className="text-xl font-semibold mb-2">Sandeep Maurya</h3>
               <p className="text-blue-600 mb-2">Senior Electrician</p>
               <p className="text-gray-600 text-sm">
                 10+ years experience in appliance repair and electrical

@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Phone, CheckCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Phone, CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -12,11 +12,16 @@ export default function Hero() {
               Professional Electrical Services You Can Trust
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
-              Expert appliance repair, installation, and maintenance services. Available 24/7 for emergency repairs.
+              Expert appliance repair, installation, and maintenance services.
+              Available 24/7 for emergency repairs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button
+                size="lg"
+                asChild
+                className="bg-white text-blue-600 hover:bg-gray-100"
+              >
                 <Link href="/contact">Get Free Quote</Link>
               </Button>
               <Button
@@ -27,7 +32,7 @@ export default function Hero() {
               >
                 <Link href="tel:5551234567">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call Now: (555) 123-4567
+                  Call Now: 9451190582
                 </Link>
               </Button>
             </div>
@@ -54,11 +59,13 @@ export default function Hero() {
 
           <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-4">Why Choose Shove Electricals?</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Why Choose Shove Electricals?
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
-                  <span>13+ years of professional experience</span>
+                  <span>25+ years of professional experience</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
@@ -82,5 +89,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

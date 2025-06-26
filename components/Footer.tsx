@@ -125,7 +125,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-blue-400" />
                 <div>
                   <div className="text-sm text-gray-400">Emergency</div>
-                  <div>(555) 123-4567</div>
+                  <div>9451190582</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -135,9 +135,9 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1" />
                 <div>
-                  123 Electric Avenue
+                  Ansari Road, Gorakhnath
                   <br />
-                  Springfield, ST 12345
+                  Gorakhpur, UP, 273015
                 </div>
               </div>
             </div>
